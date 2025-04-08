@@ -1,0 +1,48 @@
+
+{
+    "whitelistip": [
+      {
+        "id": "1",
+        "ip": "127.0.0.1",
+        "description": "local address 127.0.0.1"
+      },
+      {
+       "id": "2",
+        "ip": "loclahost",
+        "description":  "local address loclahost"
+      }
+    ],
+    "blacklistip":[
+      {"id": "1",
+        "ip": "127.0.2.1",
+        "description": "test"
+      },
+        {
+        "id": "2",
+        "ip": "127.0.1.1",
+        "description": "test"
+        }
+    ],
+    "middelwarepath":[
+        {
+            "path":"/",
+            "middelware":[
+                {
+                   "name": "ipWhitelistMiddleware"
+                },{
+                    "name":"authService"
+                },{
+                    "name":"loggingMiddleware"
+                }
+            ]
+        },
+        {
+            "path":"/check",
+            "middelware":[
+                {
+                   "name": "ipWhitelistMiddleware"
+                }
+            ]    
+        }
+    ]
+  }

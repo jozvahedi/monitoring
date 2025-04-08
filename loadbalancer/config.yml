@@ -1,0 +1,14 @@
+# Yaml File Config 
+
+
+httpServer:
+      httpServerServer: "localhost"
+      httpServerPort: "8080"
+basicAutentication:
+     basicAutenticationUsername: "admin"
+     basicAutenticationPassword: "admin"
+
+
+      
+
+      
